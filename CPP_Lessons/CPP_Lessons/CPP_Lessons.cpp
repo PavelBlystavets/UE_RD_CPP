@@ -17,6 +17,12 @@ int main()
         std::cout << "Write item distance: " << std::endl;
         std::cin >> item_distance;
 
+        if (item_distance < 0)
+        {
+            std::cout << "The distance cannot be less than 0. Try again" << std::endl;
+            continue;
+        }
+
         std::cout << "Write item impact (if the number is greater than zero, it is a treatment; if less - it's a damage) : " << std::endl;
         std::cin >> item_impact;
 
